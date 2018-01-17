@@ -8,8 +8,13 @@
             center: [55.76, 37.64],
             zoom: 12
         });
-var myPlacemark = new ymaps.Placemark([55.8, 37.6]);
+myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point",
+        coordinates: [55.8, 37.8]
+      }
     });
+myMap.geoObjects.add(myGeoObject); 
 </head>
 <body>
     <p>Карта Москвы</p>
