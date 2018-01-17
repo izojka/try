@@ -10,13 +10,14 @@
         });
     });
 </script>
+    
     <script type="text/javascript">
-    var myPlacemark = new ymaps.GeoObject({
-      geometry: {
-        type: "Point",
-        coordinates: [55.76, 37.56]
-      }
-    });
+    var myPlacemark = new ymaps.Placemark(new YMaps.GeoPoint(55.76,37.56));
+        myPlacemark.name = "Моя первая метка ...";
+        myPlacemark.description = "Пожалуйста, работай";
+        
+        moscow_map.addOverlay(myPlacemark);
+        
     </script>
 </head>
 <body>
