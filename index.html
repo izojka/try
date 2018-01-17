@@ -8,11 +8,18 @@
             center: [55.76, 37.64],
             zoom: 12
         });
+    });
 </script>
+    <script type="text/javascript">
+    var myPlacemark = new ymaps.GeoObject({
+      geometry: {
+        type: "Point",
+        coordinates: [55.76, 37.56]
+      }
+    });
+    </script>
 </head>
 <body>
     <p>Карта Москвы</p>
     <div id="first_map" style="width:1400px; height:900px"></div>
 </body>
-
-
