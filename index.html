@@ -12,11 +12,11 @@
 </script>
     
     <script type="text/javascript">
-    var myPlacemark = new ymaps.Placemark(new ymaps.GeoPoint(55.76,37.56));
-        myPlacemark.name = "Моя первая метка ...";
-        myPlacemark.description = "Пожалуйста, работай";
+    var myPlacemark1 = new ymaps.Placemark([55.76,37.56]);
+        myPlacemark1.hintContent = "Моя первая метка ...";
+        myPlacemark1.balloonContent = "Пожалуйста, работай";
         
-        moscow_map.addOverlay(myPlacemark);
+        moscow_map.geoObjects.add(myPlacemark1);
         
     </script>
 </head>
