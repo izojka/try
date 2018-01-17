@@ -1,4 +1,4 @@
-<head>
+
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript">
     var moscow_map;
@@ -11,11 +11,11 @@
 myGeoObject = new ymaps.GeoObject({
       geometry: {
         type: "Point",
-        coordinates: [55.8, 37.8]
+          coordinates: [55.8, 37.8]
       }
     });
 myMap.geoObjects.add(myGeoObject); 
-</head>
+
 <body>
     <p>Карта Москвы</p>
     <div id="first_map" style="width:1400px; height:900px"></div>
