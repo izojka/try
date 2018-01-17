@@ -1,7 +1,8 @@
 <head>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript">
-    var moscow_map;
+    var moscow_map,
+        myPlacemark1;
         
     ymaps.ready(function(){
         moscow_map = new ymaps.Map("first_map", {
@@ -9,10 +10,8 @@
             zoom: 12
         });
     });
-</script>
     
-    <script type="text/javascript">
-    var myPlacemark1 = new ymaps.Placemark([55.76,37.56]);
+    myPlacemark1 = new ymaps.Placemark([55.76,37.56]);
         myPlacemark1.hintContent = "Моя первая метка ...";
         myPlacemark1.balloonContent = "Пожалуйста, работай";
         
